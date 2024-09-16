@@ -16,3 +16,125 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css'); */ 
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #fff;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.nav-list {
+  display: block;
+  margin: 16px;
+}
+
+.link {
+  background-color: #8299ec;
+
+}
+
+/*      TIMER                 */
+
+#datetime-picker {
+  border-radius: 8px;
+  width: 272px;
+  height: 40px;
+  border: 1px solid #2e2f42;
+  outline: none;
+  padding: 8px 16px;
+  margin-top: 32px;
+  margin-left: 100px;
+}
+
+#datetime-picker:hover {
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+#datetime-picker:active {
+
+  color: #000;
+  border: 1px solid #4e75ff;
+  border-radius: 4px;
+}
+
+#datetime-picker:disabled {
+  color: #808080;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+button[data-start] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  color: #fff;
+  margin-left: 8px;
+ border: none;
+}
+
+button[data-start]:hover {
+  background: #6c8cff;
+}
+
+button[data-start]:disabled {
+  color: #989898;
+  background: #cfcfcf;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  width: 346px;
+  height: 72px;
+  margin-top: 32px;
+  margin-left: 156px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
